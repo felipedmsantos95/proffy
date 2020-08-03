@@ -1,12 +1,11 @@
 import React from 'react';
 
+import Landing from './pages/Landing';
 
-function App() {
-  return (
-    <div className="App">
-      <h1>Proffy</h1>
-    </div>
-  );
-}
+import './assets/styles/global.css';
+
+const App: React.FC = () => {
+  return <Landing />;
+};
 
 export default App;
