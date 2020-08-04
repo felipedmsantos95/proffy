@@ -1,7 +1,7 @@
 # Proffy
 
 <p align="center">
-    <img src="https://github.com/felipedmsantos95/proffy/blob/master/img/proffy.png"/>
+    <img src="https://github.com/felipedmsantos95/proffy/blob/master/img/proffy.jpg"/>
     </br>
     <a href="readme_en.md">English</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
     <a href="readme.md">Português</a>&nbsp;&nbsp;&nbsp;
