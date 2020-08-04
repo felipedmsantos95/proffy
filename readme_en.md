@@ -52,11 +52,11 @@ $ cd proffy
 
 1. To run the API for the first time, access the ./server/ directory and execute the command below to install the dependencies:
 
-		npm i
+		yarn i
 
 2. Once the dependencies are installed, using the command below it is possible to execute the application backend, by default it will be available for requests through port 3333 at the address http://localhost:3333/
 
-		npm start
+		yarn start
 
 ### Running Frontend Web
 
