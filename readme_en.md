@@ -50,7 +50,7 @@ $ cd proffy
 
 ### Running Backend
 
-1. To run the API for the first time, access the ./server/ directory and execute the command below to install the dependencies:
+1. To run the API for the first time, access the `./server/` directory and execute the command below to install the dependencies:
 
 		yarn i
 
@@ -62,7 +62,7 @@ $ cd proffy
 
 With the backend running, you can perform the steps below to run the application frontend locally.
 
-1. Access the ./web/ directory and run the command below to install the dependencies:
+1. Access the `./web/` directory and run the command below to install the dependencies:
 
 		yarn
 
@@ -78,7 +78,7 @@ With the backend running, you can perform the steps below to run the application
 
 1. Install the [Expo](https://play.google.com/store/apps/details?id=host.exp.exponent&hl=en) application on your smartphone and connect it on the same network as the back-end server.
 
-2. Access the ./mobile/ directory and execute the command below to install the dependencies:
+2. Access the `./mobile/` directory and execute the command below to install the dependencies:
 
 		yarn
 
