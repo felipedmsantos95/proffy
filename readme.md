@@ -51,7 +51,7 @@ $ cd proffy
 
 ### Executando Backend
 
-1. Para rodar a API pela primeira vez, acessar o diretório ./server/ e executar o comando abaixo para instalar as dependências:
+1. Para rodar a API pela primeira vez, acessar o diretório `./server/` e executar o comando abaixo para instalar as dependências:
 
 		yarn
 
@@ -63,7 +63,7 @@ $ cd proffy
 
 Com o backend sendo executado, pode-se executar os passos abaixo para rodar o frontend da aplicação localmente.
 
-1. Acessar o diretório ./web/ e executar o comando abaixo para instalar as dependências:
+1. Acessar o diretório `./web/` e executar o comando abaixo para instalar as dependências:
 
 		yarn
 
@@ -79,7 +79,7 @@ Com o backend sendo executado, pode-se executar os passos abaixo para rodar o fr
 
 1. Instalar o aplicativo [Expo](https://play.google.com/store/apps/details?id=host.exp.exponent&hl=en) em seu smartphone e o conectar na mesma rede que o servidor back-end.
 
-2. Acessar o diretório ./mobile/ e executar o comando abaixo para instalar as dependências:
+2. Acessar o diretório `./mobile/` e executar o comando abaixo para instalar as dependências:
 
 		yarn
 

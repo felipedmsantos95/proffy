@@ -1,37 +1,56 @@
 import React from 'react';
 import whatsappIcon from '../../assets/images/icons/whatsapp.svg';
 
-import './styles.css';
+import formatValue from '../../utils/formatValue';
 
-const TeacherItem: React.FC = () => {
+import './styles.css';
+import api from '../../services/api';
+
+export interface Teacher {
+  id: number;
+  avatar: string;
+  bio: string;
+  cost: number;
+  name: string;
+  subject: string;
+  whatsapp: string;
+}
+
+interface TeacherItemProps {
+  teacher: Teacher;
+}
+
+const TeacherItem: React.FC<TeacherItemProps> = ({ teacher }) => {
+  function createNewConnection(): void {
+    api.post('connections', {
+      user_id: teacher.id,
+    });
+  }
+
   return (
     <article className="teacher-item">
       <header>
-        <img
-          src="https://avatars3.githubusercontent.com/u/49029927?s=460&u=cc2da097857dc813379d21636e7a71a6d27802f5&v=4"
-          alt="Valney Marinho"
-        />
+        <img src={teacher.avatar} alt={teacher.name} />
         <div>
-          <strong>Valney Maniquinho</strong>
-          <span>Manicagem</span>
+          <strong>{teacher.name}</strong>
+          <span>{teacher.subject}</span>
         </div>
       </header>
 
-      <p>
-        Entusiasta da arte de manicar.
-        <br />
-        {/* eslint-disable-next-line react/jsx-one-expression-per-line */}
-        <br />O teor de manicagem deste indivíduo é elevadíssimo.
-      </p>
+      <p>{teacher.bio}</p>
       <footer>
         <p>
           Preço/hora:
-          <strong>R$ 50,00</strong>
+          <strong>{formatValue(teacher.cost)}</strong>
         </p>
-        <button type="button">
+        <a
+          target="_blanck"
+          onClick={createNewConnection}
+          href={`https://wa.me/${teacher.whatsapp}`}
+        >
           <img src={whatsappIcon} alt="Whatsapp" />
           Entrar em contato
-        </button>
+        </a>
       </footer>
     </article>
   );
