@@ -55,7 +55,11 @@ $ cd proffy
 
 		yarn
 
-2. Uma vez instaladas as dependências, pelo comando abaixo é possível executar o backend da aplicação, por padrão ele estará disponível para requisições através da porta 3333 no endereço http://localhost:3333/:
+2. Para configurar o banco de dados:
+
+        yarn knex:migrate
+
+3. Uma vez instaladas as dependências, pelo comando abaixo é possível executar o backend da aplicação, por padrão ele estará disponível para requisições através da porta 3333 no endereço http://localhost:3333/:
 
 		yarn start
 

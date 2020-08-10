@@ -13,6 +13,7 @@ interface ScheduleItem {
 export default class ClassesController {
     async index(request: Request, response: Response) {
         const filters = request.query;
+        console.log(filters);
 
         const subject = filters.subject as string;
         const week_day = filters.week_day as string;
@@ -26,7 +27,6 @@ export default class ClassesController {
 
         const timeInMinutes = convertHourToMinute(time);
 
-        console.log('Aqui')
         const classes = await db('classes')
             .whereExists(function () {
                 this.select('class_schedule.*')
@@ -39,6 +39,8 @@ export default class ClassesController {
             .where('classes.subject', '=', subject)
             .join('users', 'classes.user_id', '=', 'users.id')
             .select(['classes.*', 'users.*']);
+        
+        console.log(classes);
 
         return response.send(classes)
     }
