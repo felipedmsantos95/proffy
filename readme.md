@@ -88,7 +88,7 @@ Com o backend sendo executado, pode-se executar os passos abaixo para rodar o fr
 
 ### Executando App Mobile
 
-1. Instalar o aplicativo [Expo](https://play.google.com/store/apps/details?id=host.exp.exponent&hl=en) em seu smartphone e o conectar na mesma rede que o servidor back-end. PS: a URL do servidor backend pode ser alterada na variavel baseURL em `./mobile/src/services/api.ts`.
+1. Instalar o aplicativo [Expo](https://play.google.com/store/apps/details?id=host.exp.exponent&hl=en) em seu smartphone e o conectar na mesma rede que o servidor back-end. PS: a URL do servidor backend pode ser alterada na variavel `baseURL` em `./mobile/src/services/api.ts`.
 
 2. Acessar o diretório `./mobile/` e executar o comando abaixo para instalar as dependências:
 
