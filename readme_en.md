@@ -13,10 +13,18 @@
   <img src="https://github.com/felipedmsantos95/proffy/blob/master/img/proffy.gif"/>
 </p>
 
-## App Mobile Preview
+## App Mobile Screenshots
 
 <p align="center">
-  <img src="https://github.com/felipedmsantos95/proffy/blob/master/img/proffy_mobile.gif"/>
+  <img src="https://github.com/felipedmsantos95/proffy/blob/master/img/main.png"/>
+  <img src="https://github.com/felipedmsantos95/proffy/blob/master/img/search1.png"/>
+  <img src="https://github.com/felipedmsantos95/proffy/blob/master/img/search2.png"/>
+</p>
+
+<p align="center">
+  <img src="https://github.com/felipedmsantos95/proffy/blob/master/img/search_result.png"/>
+  <img src="https://github.com/felipedmsantos95/proffy/blob/master/img/favorites.png"/>
+  <img src="https://github.com/felipedmsantos95/proffy/blob/master/img/classes.png"/>
 </p>
 
 ## About
@@ -80,7 +88,7 @@ With the backend running, you can perform the steps below to run the application
 
 ### Running App Mobile
 
-1. Install the [Expo](https://play.google.com/store/apps/details?id=host.exp.exponent&hl=en) application on your smartphone and connect it on the same network as the back-end server.
+1. Install the [Expo](https://play.google.com/store/apps/details?id=host.exp.exponent&hl=en) application on your smartphone and connect it on the same network as the back-end server. PS: the URL of the backend server can be changed in the baseURL variable in `./mobile/src/services/api.ts`.
 
 2. Access the `./mobile/` directory and execute the command below to install the dependencies:
 
