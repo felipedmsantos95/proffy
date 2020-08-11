@@ -88,7 +88,7 @@ With the backend running, you can perform the steps below to run the application
 
 ### Running App Mobile
 
-1. Install the [Expo](https://play.google.com/store/apps/details?id=host.exp.exponent&hl=en) application on your smartphone and connect it on the same network as the back-end server. PS: the URL of the backend server can be changed in the baseURL variable in `./mobile/src/services/api.ts`.
+1. Install the [Expo](https://play.google.com/store/apps/details?id=host.exp.exponent&hl=en) application on your smartphone and connect it on the same network as the back-end server. PS: the URL of the backend server can be changed in the `baseURL` variable in `./mobile/src/services/api.ts`.
 
 2. Access the `./mobile/` directory and execute the command below to install the dependencies:
 
