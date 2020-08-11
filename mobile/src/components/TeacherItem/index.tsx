@@ -33,7 +33,7 @@ const TeacherItem: React.FC<TeacherItemProps> = ({ teacher, favorited}) => {
       user_id: teacher.id,
     })
     
-    Linking.openURL(`whatsapp;//send?phone=${teacher.whatsapp}`)
+    Linking.openURL(`whatsapp://send?phone=${teacher.whatsapp}`)
   }
 
   async function handleToggleFavorite() {
